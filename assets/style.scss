@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+/* Colors */
+$orange: #ff7c5c;
+
+/* Base Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header,
+section,
+footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6em;
+
+  .logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+  }
+}
+
+/* [SECTION] Intro */
+#intro {
+
+  .intro-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 1.68px;
+    color: rgb(34, 34, 34);
+    padding: 1em 5em;
+    margin-bottom: 5em;
+
+    span {
+      color: $orange;
+    }
+  }
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #272727;
+  color: #fefefe;
+  padding: 0.6em 1.3em;
+  transition: opacity 180ms ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* [PAGE] CODE */
+
+/* [SECTION] Page Head */
+#page-head {
+  text-align: center;
+  padding: 5em 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 5em;
+
+  .page-head-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .page-head-description {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+#codes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  .code {
+    max-width: 26%;
+    margin: 1em 2em 3em 2em;
+
+    .caption {
+      line-height: 3;
+      font-weight: 300;
+    }
+
+    .code-img {
+      max-height: 100px;
+      transition: all 190ms ease-in-out;
+    }
+
+    .code-img:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
